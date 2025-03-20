@@ -16,6 +16,8 @@ body {
   background-color: #353843;
 }
 
+/*HEADER BOX STYLES*/
+
 header {
   background-color: #121216;
 }
@@ -36,10 +38,18 @@ section {
   margin: 0 auto;
 }
 
+/*LOGO STYLES*/
+
 .header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo-search {
+  display: flex;
+  align-items: center;
+  gap: 100px;
 }
 
 .logo {
@@ -49,11 +59,15 @@ section {
   font-family: "Caveat", sans-serif;
 }
 
+/*SEARCH BAR STYLES*/
+
 .search-bar {
+  display: flex;
   width: 400px;
+  height: 45px;
   background: #1f1f27;
   padding: 10px 20px;
-  border-radius: 20px;
+  border-radius: 28px;
 }
 
 .search-bar input {
@@ -70,10 +84,25 @@ section {
   color: #8d8ba5;
 }
 
+.search-icon {
+  font-size: 15px;
+  align-content: center;
+}
+
+/*MENU OPTIONS STYLE*/
+
 .options {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row;
+  gap: 20px;
 }
 
 .option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
   min-width: 60px;
   text-transform: capitalize;
   cursor: pointer;
@@ -87,13 +116,18 @@ section {
 .categories {
   background-color: #2b2d36;
   padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
 }
 
 .category {
   padding: 10px 18px;
   color: white;
-  font-size: 18px;
-  font-weight: bold;
+  font-size: 20px;
+  font-weight: inherit;
+
   cursor: pointer;
   height: max-content;
   text-align: center;
@@ -111,6 +145,9 @@ section {
 }
 
 .view-options {
+  display: flex;
+  flex-direction: row;
+  gap: 35px;
 }
 
 i.fa-th-list {
@@ -118,11 +155,18 @@ i.fa-th-list {
 }
 
 .section-control {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding-bottom: 20px;
   border-bottom: 1px solid #8d8ba5;
 }
 
 .section-control .view-option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
   width: 40px;
   height: 40px;
   border: 1px solid #8d8ba5;
@@ -182,6 +226,9 @@ i.fa-th-list {
 /* GRID VIEW STYLES */
 
 .grid.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
 }
 
 .grid .product {
@@ -194,26 +241,44 @@ i.fa-th-list {
 }
 
 .grid .product-data {
-  height: 100%;
+  height: 302px;
+  width: 298px;
 }
 
 .grid .product-info {
+  height: 230px;
+  width: 298px;
   text-align: center;
-  padding: 0 20px 30px;
+  padding: 20px;
+  padding-bottom: 40px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .grid .product-action {
   padding-top: 30px;
   border-top: 1px solid #8d8ba5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
 /* LINE VIEW STYLES */
 
 .lines.products {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .lines .product {
   padding: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
 }
 
 .lines .product-image-wrapper {
@@ -222,20 +287,35 @@ i.fa-th-list {
 }
 
 .lines .product-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .lines .product-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .lines .product-action {
+  display: flex;
+  gap: 25px;
 }
 
 /* LINES-ACTION VIEW */
 
 .lines-action.products {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .lines-action .product {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  padding: 25px;
 }
 
 .lines-action .product-image-wrapper {
@@ -244,13 +324,26 @@ i.fa-th-list {
 }
 
 .lines-action .product-data {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .lines-action .product-info {
+  display: flex;
+  flex-direction: column;
+  width: 395px;
+  gap: 20px;
 }
 
 .lines-action .product-action {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-right: 11px;
   border-left: 1px solid #8d8ba5;
+  height: 170px;
   padding-left: 30px;
   min-width: 200px;
 }

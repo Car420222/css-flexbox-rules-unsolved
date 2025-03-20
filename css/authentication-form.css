@@ -12,10 +12,27 @@ body {
 
 .content {
   padding: 30px;
+  display: flex;
+  gap: 35px;
+}
+
+div#sign-in,
+div#sign-up {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+div.form-header {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
 }
 
 h2 {
   text-transform: uppercase;
+  font-weight: bold;
 }
 
 p {
@@ -27,6 +44,46 @@ p {
 form {
   border: 1px solid #a9a9a9;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+div.form-input-control {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+div.form-checkbox-control {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+div.form-submit-control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+div.form-group-horizontal-control {
+  display: flex;
+  gap: 30px;
+}
+
+select#city,
+select#state {
+  height: 30px;
+  width: 350px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"] {
+  height: 30px;
 }
 
 .subtext {
